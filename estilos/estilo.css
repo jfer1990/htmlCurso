@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+
+
+body{
+    font-size: 16px;
+    font-family:'Source Sans Pro', sans-serif; ;
+}
 header{
     width: 100%;
     background: black;
     color:white;
+    padding: 5px;
+}
+h1{
+    font-size: 2em;
+}
+
+article[lang |= "en"], article[lang |= "it"]{
+    display: none;
+}
+h2[title]{
+    font-size: 1.5em;
+}
+
+section {
+    width: 70%;
+    background: maroon;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+
+
+}
+
+section.casosDeExito{
+    margin-top:1px;
+}
+section.casosDeExito h2{
+    font-weight: bolder;
+    color: red;
+    text-align: center;
+}
+section article{
+    margin: 3em;
+}
+section.casosDeExito article{
+    background:black;
 }
