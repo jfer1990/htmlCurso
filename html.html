@@ -13,12 +13,26 @@
             <h1>Nombre de la página</h1>
             <h2>Este es el elemento relacionado al principal pero no viceversa</h2>
         </hgroup>
-        <nav>
+        <form class="userInput" action="user.php">
+            <label for="username">Usuario</label>
+            <input type="text" placeholder="usuario@correo">
+            <label for="password">Contraseña</label>
+            <input type="password">
+        </form>
+        <nav title="main">
             <ul>
-                <li><a href="#"> opcion1</a></li>
-                <li><a href="#"> opcion2</a></li>
-                <li><a href="#"> opcion3</a></li>
-                <li><a href="#"> opcion4</a></li>
+                <span>
+                    <li><a href="#uno"> opcion1</a></li>
+                </span>
+                <span>
+                    <li><a href="#dos"> opcion2</a></li>
+                </span>
+                <span>
+                    <li><a href="#tres"> opcion3</a></li>
+                </span>
+                <span>
+                    <li><a href="#cuatro"> opcion4</a></li>
+                </span>
             </ul>
         </nav>
     </header>
