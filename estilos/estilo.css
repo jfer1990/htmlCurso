@@ -6,6 +6,10 @@ body{
     font-family:'Source Sans Pro', sans-serif; 
     background:hsl(110, 80%, 75%);
 }
+
+body *{
+    box-sizing: border-box;
+}
 header{
     width: 100%;
     height: 11em;
@@ -13,18 +17,30 @@ header{
     color:white;
     padding: 5px;
     margin: 0px;
+    border:none;    
 }
 hgroup{
     display: inline-block;
+    vertical-align: top;
 }
-form.userInput::before{
-    content:url("imagenes/user.png");
+div.form{
+    display: inline;
+    width:25%;
+    height: 6em;
+    float: right;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+div.form img{
+    width: 35%;
+    display: inline-block;
+    
 }
 form.userInput{
     /*El float right|center|left 
     no permite renderizar un display-inlineBlock*/
-    float: right;
-    margin:2em;
+    display:inline-block;
+    width:65%;
 }
 form.userInput > *{
     display: block;
@@ -49,7 +65,7 @@ h1{
     font-size: 2em;
 }
 nav{
-    display: block;
+    display: inline;
 }
 nav ul{
     list-style: none;
@@ -77,17 +93,39 @@ nav[title="main"] a:visited{
 nav[title="main"] a:hover{
     color:rgb(6, 250, 59);
     font-weight: bolder;
-    font-size: 1.5em;
+    
+}
+span.navBar{
+    /*transition-property: all;
+    transition-duration: 8s;
+    transition-timing-function: ease;
+    */
+    transition: all .3s ease;
+
+
+}
+span.navBar:hover{
+    display: inline-block;
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
     
 }
 nav[title="main"] li:hover{
     transform: scaleY(1.5);
 
 }
+section{
+    float:center;
+    border-radius:9px;
+}
 section.Biografia article{
     background:rgba(0, 0, 0, .2); 
 }
-
+article{
+    box-shadow: 2px 2px 8px black;
+    border-radius: 4px;
+}
 article[lang |= "en"], article[lang |= "it"]{
     display: none;
 }
@@ -129,7 +167,7 @@ section article{
     padding:1em;
 }
 section.casosDeExito article{
-    background:black;
+    background:rgb(175, 197, 245);
 }
 
 
