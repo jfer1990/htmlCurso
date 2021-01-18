@@ -6,6 +6,12 @@ body{
     font-family:'Source Sans Pro', sans-serif; 
     background:hsl(110, 80%, 75%);
 }
+#page-container{
+    position: relative;
+}
+#content-wrapper{
+    padding-bottom:2rem;    
+}
 
 body *{
     box-sizing: border-box;
@@ -115,9 +121,41 @@ nav[title="main"] li:hover{
     transform: scaleY(1.5);
 
 }
+article::before{
+    content: "";
+    -moz-transition-duration: .4s;
+    -webkit-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    border-style: solid;
+    border-width: 30px 30px 30px 0px;
+    border-color:transparent
+                 transparent 
+                 transparent
+                 transparent;             
+    position:absolute;
+    margin-top: -15px;
+    left:0px;
+    top:50%;
+
+    
+}
+
+article:hover::before{
+    left: -2em;
+    border-right-color: blue;
+}
+
 section{
-    float:center;
+    position: relative;
+    left:15%;
     border-radius:9px;
+    width: 70%;
+    background: rgb(105, 149, 243);
+    color: white;
+    padding: 10px;
+    margin: 1em;
+    display: block;
+    min-width: 600px;
 }
 section.Biografia article{
     background:rgba(0, 0, 0, .2); 
@@ -125,7 +163,42 @@ section.Biografia article{
 article{
     box-shadow: 2px 2px 8px black;
     border-radius: 4px;
+    display: inline-block;
+    position:relative;
 }
+article:hover{
+    -moz-animation: 2s inflate 1;
+    -webkit-animation: 2s inflate 1;
+    -o-animation:2s inflate 1;
+}
+@-moz-keyframes inflate{
+    25%{
+        -moz-transform: scaleX(.8);
+    }
+    50%{
+        -moz-transform: scaleX(1.2);
+
+    }
+}
+@-webkit-keyframes inflate{
+    25%{
+        -webkit-transform: scaleX(.8);
+    }
+    50%{
+        -webkit-transform: scaleX(1.2);
+
+    }
+}
+@-o-keyframes inflate {
+    25%{
+        -o-transform: scaleX(.8);
+    }
+    50%{
+        -o-transform: scaleX(1.2);
+
+    }
+}
+
 article[lang |= "en"], article[lang |= "it"]{
     display: none;
 }
@@ -143,16 +216,6 @@ figure[title="fotoBiografia"] img{
     height: 100%;
     width: auto;
 }
-section {
-    width: 70%;
-    background: rgb(105, 149, 243);
-    color: white;
-    padding: 0px;
-    margin: 1em;
-    display: inline-block;
-    min-width: 600px;
-
-}
 
 section.casosDeExito{
     margin-top:1px;
@@ -168,6 +231,13 @@ section article{
 }
 section.casosDeExito article{
     background:rgb(175, 197, 245);
+}
+footer{
+    position: relative;
+    bottom:0%;
+    width:100%;
+    height: 2rem;
+    background-color: #08573a;
 }
 
 

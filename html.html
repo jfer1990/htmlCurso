@@ -8,93 +8,96 @@
     <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 <body>
-    <header>
-        <hgroup>
-            <h1>Nombre de la página</h1>
-            <h2>Este es el elemento relacionado al principal pero no viceversa</h2>
-        </hgroup>
-        <div class="form">
-            <img src="imagenes/user.png" alt=""/>
-            <form class="userInput" action="user.php">
-                <label for="username">Usuario</label>
-                <input type="text" placeholder="usuario@correo">
-                <label for="password">Contraseña</label>
-                <input type="password">
-            </form>
+    <div id="page-container">
+        <div id="content-wrapper">
+            <header>
+                <hgroup>
+                    <h1>Nombre de la página</h1>
+                    <h2>Este es el elemento relacionado al principal pero no viceversa</h2>
+                </hgroup>
+                <div class="form">
+                    <form class="userInput" action="user.php">
+                        <label for="username">Usuario</label>
+                        <input type="text" placeholder="usuario@correo">
+                        <label for="password">Contraseña</label>
+                        <input type="password">
+                    </form>
+                </div>
+                <nav title="main">
+                    <ul>
+                        <span class="navBar">
+                            <li><a href="#uno"> opcion1</a></li>
+                        </span>
+                        <span class="navBar">
+                            <li><a href="#dos"> opcion2</a></li>
+                        </span>
+                        <span class="navBar">
+                            <li><a href="#tres"> opcion3</a></li>
+                        </span>
+                        <span class="navBar">
+                            <li><a href="#cuatro"> opcion4</a></li>
+                        </span>
+                    </ul>
+                </nav>
+            </header>
+            <section class="Biografia">
+                <article lang="es-MX">
+                    <h2 title="biografia">Biografia</h2>
+                    <figure title="fotoBiografia">
+                        <img src="imagenes/nu.png" alt="en el atributo alt debe ir la descripcion de la imagen">
+                    </figure>
+                    <p>Hola qué tal, mi nombre es <strong>nombre de la persona</strong>  
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit placeat quidem eligendi exercitationem, 
+                        omnis tenetur labore consequuntur error ipsam voluptatibus! Delectus, ipsa quidem. Maiores dignissimos temporibus minima 
+                        nostrum dolorum..</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, 
+                        obcaecati impedit soluta, quisquam consectetur omnis quo ullam, dignissimos 
+                        veritatis eius tenetur! Odit doloremque consequatur delectus rerum minus, autem qui!</p>
+                </article>
+                <article lang="en">
+                    <h2 title="biografia">Biography</h2>
+                    <p>Hello there my name is <strong>name of the subject</strong> I want to ... 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias eaque doloribus esse atque ad labore? Incidunt inventore quasi eos ab qui aliquam, voluptatum mollitia odit culpa aliquid quos. Eligendi..</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, 
+                        obcaecati impedit soluta, quisquam consectetur omnis quo ullam, dignissimos 
+                        veritatis eius tenetur! Odit doloremque consequatur delectus rerum minus, autem qui!</p>
+                </article>
+                <article lang="it">
+                    <h2 title="biografia">Biografia</h2>
+                    <p>Ciao! sonno <strong>name of the subject</strong> vorrebre ... 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias eaque doloribus esse atque ad labore? Incidunt inventore quasi eos ab qui aliquam, voluptatum mollitia odit culpa aliquid quos. Eligendi..</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, 
+                        obcaecati impedit soluta, quisquam consectetur omnis quo ullam, dignissimos 
+                        veritatis eius tenetur! Odit doloremque consequatur delectus rerum minus, autem qui!</p>
+                </article>
+            </section>
+            <section class="casosDeExito">
+                <article>
+                    <h2 title="biografia">Caso 1</h2>
+                    <p>Este es un <strong>article 1</strong> dentro de un <strong>section2</strong>, todos los elementos deben estar relacionados entre sí y además pertenecer
+                        a un section.</p>
+                    <p>Para hacer notar u
+                        cambio de parrafo siempre es con el elemento p... Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit nemo dignissimos saepe molestias!
+                        Quos dolorem eos, libero saepe aliquam velit at, adipisci doloremque laudantium facilis earum, temporibus ea quia.</p>
+                    <aside>Un aside es información relacionada indirecamente con un tema, por eso se le asocia semánticamente a un article
+                            The aside content should be indirectly related to the surrounding content.
+                    </aside>
+                </article>
+                <article>
+                    <h2 title="casosExito">Caso 2</h2>
+                    <p>Este es un <strong>article 2</strong> dentro de un section2, todos los elementos deben estar relacionados entre sí y además pertenecer
+                        a un section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam, praesentium eaque unde ipsa porro, 
+                        officia nemo dolorem inventore, illum nobis autem id! Sit, qui? Consectetur cupiditate atque facere eius?</p>
+                    <p>Para hacer notar un  cambio de parrafo siempre es con el elemento p</p>
+                </article>
+            </section>
         </div>
-        <nav title="main">
-            <ul>
-                <span class="navBar">
-                    <li><a href="#uno"> opcion1</a></li>
-                </span>
-                <span class="navBar">
-                    <li><a href="#dos"> opcion2</a></li>
-                </span>
-                <span class="navBar">
-                    <li><a href="#tres"> opcion3</a></li>
-                </span>
-                <span class="navBar">
-                    <li><a href="#cuatro"> opcion4</a></li>
-                </span>
-            </ul>
-        </nav>
-    </header>
-    <section class="Biografia">
-        <article lang="es-MX">
-            <h2 title="biografia">Biografia</h2>
-            <figure title="fotoBiografia">
-                <img src="imagenes/nu.png" alt="en el atributo alt debe ir la descripcion de la imagen">
-            </figure>
-            <p>Hola qué tal, mi nombre es <strong>nombre de la persona</strong>  
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod velit placeat quidem eligendi exercitationem, 
-                omnis tenetur labore consequuntur error ipsam voluptatibus! Delectus, ipsa quidem. Maiores dignissimos temporibus minima 
-                nostrum dolorum..</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, 
-                obcaecati impedit soluta, quisquam consectetur omnis quo ullam, dignissimos 
-                veritatis eius tenetur! Odit doloremque consequatur delectus rerum minus, autem qui!</p>
-        </article>
-        <article lang="en">
-            <h2 title="biografia">Biography</h2>
-            <p>Hello there my name is <strong>name of the subject</strong> I want to ... 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias eaque doloribus esse atque ad labore? Incidunt inventore quasi eos ab qui aliquam, voluptatum mollitia odit culpa aliquid quos. Eligendi..</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, 
-                obcaecati impedit soluta, quisquam consectetur omnis quo ullam, dignissimos 
-                veritatis eius tenetur! Odit doloremque consequatur delectus rerum minus, autem qui!</p>
-        </article>
-        <article lang="it">
-            <h2 title="biografia">Biografia</h2>
-            <p>Ciao! sonno <strong>name of the subject</strong> vorrebre ... 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae alias eaque doloribus esse atque ad labore? Incidunt inventore quasi eos ab qui aliquam, voluptatum mollitia odit culpa aliquid quos. Eligendi..</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem corrupti, 
-                obcaecati impedit soluta, quisquam consectetur omnis quo ullam, dignissimos 
-                veritatis eius tenetur! Odit doloremque consequatur delectus rerum minus, autem qui!</p>
-        </article>
-    </section>
-    <section class="casosDeExito">
-        <article>
-            <h2 title="biografia">Caso 1</h2>
-            <p>Este es un <strong>article 1</strong> dentro de un <strong>section2</strong>, todos los elementos deben estar relacionados entre sí y además pertenecer
-                a un section.</p>
-            <p>Para hacer notar u
-                  cambio de parrafo siempre es con el elemento p... Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit nemo dignissimos saepe molestias!
-                 Quos dolorem eos, libero saepe aliquam velit at, adipisci doloremque laudantium facilis earum, temporibus ea quia.</p>
-            <aside>Un aside es información relacionada indirecamente con un tema, por eso se le asocia semánticamente a un article
-                    The aside content should be indirectly related to the surrounding content.
-            </aside>
-        </article>
-        <article>
-            <h2 title="casosExito">Caso 2</h2>
-            <p>Este es un <strong>article 2</strong> dentro de un section2, todos los elementos deben estar relacionados entre sí y además pertenecer
-                a un section. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quisquam, praesentium eaque unde ipsa porro, 
-                officia nemo dolorem inventore, illum nobis autem id! Sit, qui? Consectetur cupiditate atque facere eius?</p>
-            <p>Para hacer notar un  cambio de parrafo siempre es con el elemento p</p>
-        </article>
-    </section>
     
-    <footer>
-        <p title="casosExito">Esta sección es el footer y puede representar datos  "A footer typically contains information about the author of the section, 
-            copyright data or links to related documents."</p>
-    </footer>
+        <footer>
+            <p title="casosExito">Esta sección es el footer y puede representar datos  "A footer typically contains information about the author of the section, 
+                copyright data or links to related documents."</p>
+        </footer>
+    </div>
     
 </body>
 </html>
