@@ -36,12 +36,85 @@ div.form{
     float: right;
     margin-right: 2em;
     margin-top: 2em;
+    position: relative;
 }
 div.form img{
     width: 35%;
     display: inline-block;
     
 }
+div.drop{
+    display:inline;
+}
+form::before {
+    content: "";
+    position: absolute;
+    display:inline;
+    background-color:rgb(41, 96, 197);
+    height: 100px;
+    width: 100px;
+    border-radius: 0% 50% 50% 50%;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    left: -12rem;
+    top:2em;
+
+    border-bottom:4px solid black; 
+
+    -moz-animation: 2s rebote infinite;
+    -o-animation: 2s rebote infinite;
+    -webkit-animation: 2s rebote infinite;
+}
+
+@-moz-keyframes rebote {
+    30%{
+        -moz-transform: translateY(-2em);
+
+    }
+}
+@-webkit-keyframes rebote {
+    0%, 100%{
+        opacity: .5;
+        -webkit-transform: translateY(-2em)
+                            rotate(45deg);
+
+    }
+    
+    80%{
+        opacity: 1;
+        -webkit-transform: translateY(1em)
+                            scaleX(1.3)
+                            scaleY(.8)
+                            rotate(45deg);
+    }
+
+}
+@-o-keyframes rebote {}
+form::after{
+    position: absolute;
+    content:"";
+    width: 10em;
+    height: .5em;
+    left: -14em;
+    bottom: -3.4em;
+    background: -webkit-radial-gradient(center,
+                ellipse,
+                rgba(0,0,0,0.35)0%,
+                rgba(0,0,0,0) 80%);
+    -webkit-animation: 2s shadow infinite;
+
+}
+@-webkit-keyframes shadow {
+    0%,100%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+}
+
+
 form.userInput{
     /*El float right|center|left 
     no permite renderizar un display-inlineBlock*/
